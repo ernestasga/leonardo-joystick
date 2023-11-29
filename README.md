@@ -1,6 +1,11 @@
 # Custom Arduino Leonardo Joystick
 This is a custom Arduino Leonardo Joystick. It is based on the Arduino Leonardo and uses the Arduino Joystick library.
 
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="img 1" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/1.jpg?raw=true">  |  <img width="1604" alt="img2" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/2.jpg?raw=true">|<img width="1604" alt="img 3" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/3.jpg?raw=true">|
+|<img width="1604" alt="img 4" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/4.jpg?raw=true">  |  <img width="1604" alt="img 5" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/5.jpg?raw=true">| <img width="1604" alt="img 6" src="https://github.com/ernestasga/leonardo-joystick/blob/main/images/6.jpg?raw=true"> |
+
 ## Overview
 Joystick is built with accessibility and modularity in mind.
 
