@@ -93,9 +93,9 @@ class Button {
 // Main Joystick
 AnalogJoystick joystick1(A0, A1, 0.025, true, true); // 2.5% deadzone
 // Secondary Joystick
-AnalogJoystick joystick2(A2, A3, 0.025); // 2.5% deadzone
+AnalogJoystick joystick2(A3, A2, 0.025, true, false); // 2.5% deadzone
 // Sliders
-Slider slider1(A4);
+Slider slider1(A4, true);
 Slider slider2(A5);
 // Buttons
 Button buttons[] = {Button(2), Button(3), Button(4), Button(5), Button(6), Button(7), Button(8), Button(9), Button(10)};
@@ -133,8 +133,8 @@ void loop() {
   Joystick.setRyAxis(joystick2.readY());
 
   // Sliders
-  Joystick.setThrottle(slider1.readValue());
-  Joystick.setAccelerator(slider2.readValue());
+  Joystick.setZAxis(slider1.readValue());
+  Joystick.setRzAxis(slider2.readValue());
 
   // Buttons
   for (int i = 0; i < 9; i++) {
@@ -142,8 +142,7 @@ void loop() {
   }
 
   // Dummy Always Center Axes
-  Joystick.setZAxis(512);
-  Joystick.setRzAxis(512);
+  Joystick.setThrottle(512);
 
-  delay(10);
+  delay(1);
 }
